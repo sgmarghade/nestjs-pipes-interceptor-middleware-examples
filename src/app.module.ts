@@ -2,7 +2,7 @@ import { MiddlewareConsumer, Module, NestModule } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { RequestService } from './request.service';
-import { AuthenticationMiddleware } from './middleware/authentication.middleware';
+import { AuthenticationMiddleware } from './middlewares/authentication.middleware';
 
 @Module({
   imports: [],

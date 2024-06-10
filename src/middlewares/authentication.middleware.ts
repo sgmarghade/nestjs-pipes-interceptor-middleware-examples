@@ -2,7 +2,7 @@ import { Injectable, Logger, NestMiddleware } from '@nestjs/common';
 import { NextFunction } from 'express';
 import { RequestService } from '../request.service';
 
-//This middleware should be registered in AppModule for given routes.
+//This middlewares should be registered in AppModule for given routes.
 @Injectable()
 export class AuthenticationMiddleware implements NestMiddleware {
   private readonly logger = new Logger(AuthenticationMiddleware.name);
